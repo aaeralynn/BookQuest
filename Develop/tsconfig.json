@@ -5,7 +5,7 @@
     "moduleResolution": "Bundler",
     "skipLibCheck": true,
     "allowJs": true,
-    "checkJs": false, // Set this to false
+    "checkJs": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,6 +16,17 @@
     "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,
     "noImplicitOverride": true,
-    "useUnknownInCatchVariables": true
-  }
+    "useUnknownInCatchVariables": true,
+    "outDir": "./dist", // Output directory for compiled files (from src)
+    "rootDir": "./src" // Source directory for TypeScript files
+  },
+  "include": [
+    "src/**/*" // Include all TypeScript files from src
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules
+    "dist", // Exclude dist folder to prevent overwriting (but we want files in dist/output!)
+    "dist/**/*.js", // Exclude already compiled .js files in dist
+    "src/**/*.js" // Exclude JavaScript files in the source folder (if any)
+  ]
 }

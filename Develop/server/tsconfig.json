@@ -1,13 +1,9 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../tsconfig.json", // Inherit from base tsconfig.json
   "compilerOptions": {
-    /* Modules */
-    "rootDir": "src" /* Specify the root folder within your source files. */,
-
-    /* Emit */
-    "outDir": "dist" /* Specify an output folder for all emitted files. */
-    // "noEmitOnError": true /* Disable emitting files if any type checking errors are reported. */
+    "rootDir": "src", // Root directory for source files
+    "outDir": "dist" // Output directory for compiled JavaScript files
   },
-  "include": ["src"],
-  "typeRoots": ["./node_modules/@types", "./src/types"]
+  "include": ["src"], // Include all files in the 'src' directory
+  "typeRoots": ["./node_modules/@types", "./src/types"] // Additional type definitions
 }
