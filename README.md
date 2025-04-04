@@ -3,6 +3,8 @@
 ## Description  
 BookQuest is a full-stack book search engine built using the MERN stack. The application was originally built with a RESTful API and has been refactored to use GraphQL with Apollo Server. Users can search for books using the Google Books API and save their favorite books to their accounts for future reference.  
 
+![Screenshot of the app](client/src/Screenshot%202025-04-03%20211110.png)
+
 ## Features  
 
 ### Book Search  
