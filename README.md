@@ -74,23 +74,17 @@ git clone <your-repository-url>
 cd BookQuest/Develop
 
 Install dependencies for both client and server
-bash
-Copy
-Edit
 cd server  
-npm install  
+npm install
+
 cd ../client  
-npm install  
+npm install
+
 Create a .env file in the server directory and add your environment variables
-plaintext
-Copy
-Edit
 MONGODB_URI=<your-mongodb-atlas-connection-string>  
-JWT_SECRET=<your-secret-key>  
+JWT_SECRET=<your-secret-key>
+
 Build and start the application
-bash
-Copy
-Edit
 npm run build  
 npm run start  
 Usage
